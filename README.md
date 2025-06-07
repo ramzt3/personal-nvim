@@ -7,16 +7,16 @@ This document provides a simple and organized overview of all the custom keybind
 ### Linux and macOS
 
 ```
-git clone https://github.com/ramzt3/lo.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/ramzt3/personal-nvim "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 ### Windows
 If you're using `cmd.exe`:
 ```
-git clone https://github.com/ramzt3/lo.nvim.git "%localappdata%\nvim"
+git clone https://github.com/ramzt3/personal-nvim "%localappdata%\nvim"
 ```
 If you're using `powershell.exe`:
 ```
-git clone https://github.com/ramzt3/lo.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/ramzt3/personal-nvim "${env:LOCALAPPDATA}\nvim"
 ```
 
