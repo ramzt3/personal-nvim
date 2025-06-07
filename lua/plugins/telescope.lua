@@ -28,7 +28,7 @@ return {
         pcall(require("telescope").load_extension, "ui-select")
 
         local builtin = require("telescope.builtin")
-        vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[f]ind [f]iles" })
+        vim.keymap.set("n", "<leader>fd", builtin.find_files, { desc = "[f]ind [d]irectory" })
         vim.keymap.set("n", "<leader>fg", builtin.git_files, { desc = "[g]it [f]iles" })
         vim.keymap.set("n", "<leader>fo", builtin.oldfiles, { desc = "[o]ld [f]iles" })
         vim.keymap.set("n", "<leader>fq", builtin.quickfix, { desc = "[q]uick [f]ix" })
@@ -38,7 +38,7 @@ return {
         vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "buffers <leader><leader>" })
 
         -- Rip grep + Fzf
-        vim.keymap.set("n", "<leader>sw", function()
+        vim.keymap.set("n", "<leader>fw", function()
             builtin.grep_string({ search = vim.fn.input("Grep > ") })
         end)
         -- Slightly advanced example of overriding default behavior and theme
@@ -50,12 +50,12 @@ return {
             }))
         end, { desc = "[/] Fuzzily search in current buffer" })
 
-        vim.keymap.set("n", "<leader>sn", function()
+        vim.keymap.set("n", "<leader>fn", function()
             builtin.find_files({ cwd = vim.fn.stdpath("config") })
         end, { desc = "[S]earch [N]eovim files" })
 
         -- Find instance instance of current view being included
-        vim.keymap.set("n", "<leader>sc", function()
+        vim.keymap.set("n", "<leader>fc", function()
             local filename_without_extension = vim.fn.expand("%:t:r")
             builtin.grep_string({ search = filename_without_extension })
         end, { desc = "Find current file: " })
@@ -64,6 +64,5 @@ return {
         vim.keymap.set("n", "<leader>ss", function()
             builtin.grep_string({})
         end, { desc = "Find current string: " })
-
     end,
 }
