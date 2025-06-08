@@ -13,7 +13,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -51,6 +51,7 @@ vim.opt.splitbelow = true --split horizontal window to the bottom
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"
+vim.opt_local.columns=80
 
 vim.o.timeout = true
 vim.o.timeoutlen = 300
