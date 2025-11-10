@@ -15,7 +15,7 @@ return {
             vim.cmd('hi Directory guibg=NONE')
             vim.cmd('hi SignColumn guibg=NONE')
             vim.cmd.colorscheme 'catppuccin'
-            enable_transparency()
+            -- enable_transparency()
         end,
     },
     -- {
@@ -28,4 +28,20 @@ return {
     --         enable_transparency()
     --     end
     -- }
+    -- {
+    --     "folke/tokyonight.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     opts = {},
+    --     config = function()
+    --         vim.cmd("colorscheme tokyonight-moon")
+    --     end
+    -- },
+    -- {
+    --     "rose-pine/neovim",
+    --     name = "rose-pine",
+    --     config = function()
+    --         vim.cmd("colorscheme rose-pine")
+    --     end
+    -- },
 }

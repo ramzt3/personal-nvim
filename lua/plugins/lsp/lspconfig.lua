@@ -265,6 +265,7 @@ return {
 
     lspconfig['lua_ls'].setup({ capabilities = capabilities })
     lspconfig['intelephense'].setup({ capabilities = capabilities })
+    lspconfig['laravel_ls'].setup({ capabilities = capabilities })
     lspconfig['html'].setup({ capabilities = capabilities })
     lspconfig['svelte'].setup({ capabilities = capabilities })
   end
