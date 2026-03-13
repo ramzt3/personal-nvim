@@ -68,3 +68,5 @@ vim.g.editorconfig = true
 
 -- nerd_font
 vim.g.have_nerd_font = true
+
+vim.opt.encoding = 'utf-8'
