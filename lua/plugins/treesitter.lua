@@ -44,6 +44,7 @@ return {
                     "rust",
                     "blade",
                     "php",
+                    "php_only",
                 },
                 incremental_selection = {
                     enable = true,
