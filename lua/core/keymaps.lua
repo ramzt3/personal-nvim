@@ -55,6 +55,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     end,
 })
 
+-- move line
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+
 -- tab stuff
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")   --open new tab
 vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>") --close current tab
